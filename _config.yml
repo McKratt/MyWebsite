@@ -22,7 +22,7 @@ title: Voyages
 #email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Nos Voyages autour du Monde.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/voyages" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
