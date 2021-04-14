@@ -5,9 +5,9 @@ layout: default
 <div class="blog">
     <h2>{{ page.category }}</h2>
     <ul class="articles">
-        {% for post in site.categories[page.category] %}
+        {% for post in site.categories[page.category] reversed %}
         <li class="article">
-            <h3><a class="u-url" href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></h3>
+            <h3><a class="u-url" href="{{site.baseurl}}{{post.url}}">{{post.date | date: '%d.%m.%Y'}} - {{ post.title }}</a></h3>
             <div class="excerpt">
                 {{ post.excerpt }}
                 <a href="{{site.baseurl}}{{post.url}}">...</a>
